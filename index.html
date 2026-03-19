@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Min Besøksmåler</title>
+    <title>Tiden renner ut...</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 100px; }
-        h1 { color: #333; }
-        .counter { margin-top: 20px; }
+        /* Her gjør vi bakgrunnen mørk og "skummel" */
+        body { 
+            background-color: #0d0000; /* Nesten helt sort rød-farge */
+            color: #ff0000;           /* Blodrød tekst */
+            font-family: 'Courier New', Courier, monospace; /* Skrivemaskin-stil */
+            text-align: center; 
+            margin-top: 150px;
+            text-shadow: 2px 2px 8px #000; /* Gir teksten en mørk skygge */
+        }
+
+        h1 { 
+            font-size: 3em;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .counter { 
+            margin-top: 50px;
+            filter: grayscale(1) invert(1) brightness(0.7); /* Gjør telleren hvit/grå og mørkere */
+        }
+
+        p {
+            font-size: 1.5em;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-    <h1>Velkommen til min nettside!</h1>
-    <p>Antall besøk hittil:</p>
+    <h1>TIDEN GÅR...</h1>
+    <p>Number of hours until it's your turn:</p>
     
     <div class="counter">
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdin-bruker%2Fmitt-forste-prosjekt&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Besøk&edge_flat=false" alt="Besøksmåler"/>
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdin-bruker%2Fmitt-forste-prosjekt&count_bg=%23000000&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=COUNT&edge_flat=true" alt="Teller"/>
     </div>
 </body>
 </html>
